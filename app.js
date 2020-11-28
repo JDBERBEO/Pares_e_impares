@@ -5,18 +5,18 @@ const hbs = require('express-handlebars')
 
 
 //javascript
-let array = Array.from(Array(50).keys())
+let array = []
 
 
-    for (let i = 0; i<array.length; i++)
-        if (array[i]%2==0) {
+    for (let i = 1; i<50; i++){
+        if (i%2==0) {
             array[i] = i + " Soy Par!"
         }
 
         else {
             array[i] = i + " Soy Impar!"
         }
-        
+    }
 
 
 //view engine setup
